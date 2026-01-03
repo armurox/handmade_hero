@@ -18,6 +18,7 @@ int APIENTRY WinMain(HINSTANCE hInst, HINSTANCE hInstPrev, PSTR cmdline, int cmd
 	int unsigned LargeU;
 
 	char unsigned Test;
+	char unsigned *TestPointer = &Test;
 
 	Test = 255;
 	Test = Test + 1;

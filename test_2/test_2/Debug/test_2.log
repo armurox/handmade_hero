@@ -1,8 +1,1 @@
-﻿  test_2.cpp
-C:\Users\Arman\source\repos\test_2\test_2\test_2.cpp(18,15): warning C4101: 'LargeU': unreferenced local variable
-C:\Users\Arman\source\repos\test_2\test_2\test_2.cpp(15,17): warning C4101: 'MediumU': unreferenced local variable
-C:\Users\Arman\source\repos\test_2\test_2\test_2.cpp(17,6): warning C4101: 'LargeS': unreferenced local variable
-C:\Users\Arman\source\repos\test_2\test_2\test_2.cpp(11,7): warning C4101: 'SmallS': unreferenced local variable
-C:\Users\Arman\source\repos\test_2\test_2\test_2.cpp(14,8): warning C4101: 'MediumS': unreferenced local variable
-C:\Users\Arman\source\repos\test_2\test_2\test_2.cpp(12,16): warning C4101: 'SmallU': unreferenced local variable
-  test_2.vcxproj -> C:\Users\Arman\source\repos\test_2\Debug\test_2.exe
+﻿  test_2.vcxproj -> C:\Users\Arman\source\repos\test_2\Debug\test_2.exe
