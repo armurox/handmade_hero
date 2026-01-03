@@ -52,7 +52,7 @@ int APIENTRY WinMain(HINSTANCE hInst, HINSTANCE hInstPrev, PSTR cmdline, int cmd
 	projectile *ProjectilePointer = Projectiles;
 
 	int SizeOfProjectiles = sizeof(Projectiles);
-	int SizeOfProjectilePointer = sizeof(ProjectilePointer);
+	int SizeOfProjectilePointer = sizeof(ProjectilePointer); 
 
 	Projectiles[30].Damage = 30;
 	(*(ProjectilePointer + 30)).Damage = 100;
@@ -62,4 +62,15 @@ int APIENTRY WinMain(HINSTANCE hInst, HINSTANCE hInstPrev, PSTR cmdline, int cmd
 	Test = 255;
 	Test = Test + 1;
 	foo();
+
+
+	int x = 5;
+	int y = 10;
+	int z = 12;
+	x = 0;
+	x = x | (1 << 4);
+	x = x | (1 << 8);
+	x = x & (1 << 4);
+	x = x ^ (1 << 8);
+	
 }
