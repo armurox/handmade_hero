@@ -68,7 +68,7 @@ int APIENTRY WinMain(HINSTANCE Instance, HINSTANCE PreviousInstance, PSTR Comman
     WindowClass.lpszClassName = "HandmadeHeroWindowClass";
     if (RegisterClass(&WindowClass))
     {
-        HWND WindowHandle = CreateWindowEx(
+        HWND WindowHandle = CreateWindowExA(
             0,
             WindowClass.lpszClassName,
             "Handmade Hero",
@@ -88,11 +88,11 @@ int APIENTRY WinMain(HINSTANCE Instance, HINSTANCE PreviousInstance, PSTR Comman
             MSG Message;
             for(;;)
             {
-                BOOL MessageResult = GetMessage(&Message,0,0,0);
+                BOOL MessageResult = GetMessageA(&Message,0,0,0);
                 if (MessageResult > 0)
                 {
                     TranslateMessage(&Message);
-                    DispatchMessage(&Message);
+                    DispatchMessageA(&Message);
                 }
                 else
                 {
