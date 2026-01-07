@@ -59,14 +59,14 @@ LRESULT MainWindowCallback(
 
 int APIENTRY WinMain(HINSTANCE Instance, HINSTANCE PreviousInstance, PSTR CommandLine, int ShowCode)
 {
-    WNDCLASS WindowClass = {};
+    WNDCLASSA WindowClass = {};
     
     WindowClass.style = CS_OWNDC|CS_HREDRAW|CS_VREDRAW;
     WindowClass.lpfnWndProc = MainWindowCallback;
     WindowClass.hInstance = Instance;
     // WindowClass.hIcon;
     WindowClass.lpszClassName = "HandmadeHeroWindowClass";
-    if (RegisterClass(&WindowClass))
+    if (RegisterClassA(&WindowClass))
     {
         HWND WindowHandle = CreateWindowExA(
             0,
